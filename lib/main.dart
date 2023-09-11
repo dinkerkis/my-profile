@@ -43,8 +43,8 @@ class MyApp extends StatelessWidget {
             title: 'my profile',
             theme: theme.copyWith(
               colorScheme: theme.colorScheme.copyWith(
-                primary: CustomColors.colorPrimary,
-                secondary: CustomColors.colorAccent,
+                primary: CustomColors.colorBlack,
+                secondary: CustomColors.colorBlack,
               ),
               canvasColor: CustomColors.colorWhite,
             ),

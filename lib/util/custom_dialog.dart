@@ -94,7 +94,7 @@ class SaveButtonDialog extends StatelessWidget {
           Container(
               margin: EdgeInsets.only(top: 20),
               padding: EdgeInsets.all(10),
-              child: Text('Do you want to leave this page without saving?',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),)),
+              child: Text('Do you want to leave this page without saving?',style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500, color: CustomColors.colorBlack))),
 
           SizedBox(height: 24.0),
           Align(
@@ -103,16 +103,15 @@ class SaveButtonDialog extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TextButton(
-                  child: Text('Yes'),
+                  child: Text('Yes', style: TextStyle(color: CustomColors.colorBlack),),
                   onPressed: () {
                     Get.toNamed(HomeScreen.routeName);
                   },
                 ),
                 TextButton(
-                  child: Text('No'),
+                  child: Text('No', style: TextStyle(color: CustomColors.colorBlack),),
                   onPressed: () {
-                    print('Confirmed');
-                    Navigator.of(context).pop();
+                    Get.back();
                   },
                 ),
               ],
