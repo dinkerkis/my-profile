@@ -1,0 +1,46 @@
+name: my_profile
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_screenutil: ^5.9.0
+  get: ^4.6.6
+  flutter_svg: ^2.0.7
+  shared_preferences: ^2.2.1
+  image_picker: ^1.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: raleway
+      fonts:
+        - asset: assets/fonts/raleway_regular.ttf
+        - asset: assets/fonts/raleway_medium.ttf
+          weight: 500
+        - asset: assets/fonts/raleway_semibold.ttf
+          weight: 600
+    - family: rubik
+      fonts:
+        - asset: assets/fonts/rubik_regular.ttf
+        - asset: assets/fonts/rubik_medium.ttf
+          weight: 500
+        - asset: assets/fonts/rubik_bold.ttf
+          weight: 700
