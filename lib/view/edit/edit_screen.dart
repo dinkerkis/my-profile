@@ -21,7 +21,10 @@ class EditScreen extends StatelessWidget {
           showDialog(
               context: context,
               builder: (BuildContext context) {
-                return SaveButtonDialog();
+                return SaveButtonDialog((){
+                  controller.textEditing.text = controller.value.value;
+                  Get.back();
+                });
               });
         }
         return true;
@@ -38,7 +41,10 @@ class EditScreen extends StatelessWidget {
                     showDialog(
                         context: context,
                         builder: (BuildContext context) {
-                          return SaveButtonDialog();
+                          return SaveButtonDialog((){
+                            controller.textEditing.text = controller.value.value;
+                            Get.back();
+                          });
                         });
                   } else {
                     Get.back();

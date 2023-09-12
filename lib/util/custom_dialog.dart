@@ -73,6 +73,9 @@ class CustomDialog extends StatelessWidget {
 }
 
 class SaveButtonDialog extends StatelessWidget {
+  var onYesTap = (){};
+  SaveButtonDialog(this.onYesTap);
+
   dialogContent(BuildContext context) {
     return Container(
       decoration: new BoxDecoration(
@@ -105,7 +108,8 @@ class SaveButtonDialog extends StatelessWidget {
                 TextButton(
                   child: Text('Yes', style: TextStyle(color: CustomColors.colorBlack),),
                   onPressed: () {
-                    Get.toNamed(HomeScreen.routeName);
+                    onYesTap();
+                    Get.back();
                   },
                 ),
                 TextButton(

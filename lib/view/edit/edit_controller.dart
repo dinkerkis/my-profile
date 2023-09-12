@@ -30,7 +30,6 @@ class EditController extends GetxController{
   //save data to previous screen and auto back
   void saveData() {
     Get.find<HomeController>().commonListValue.value[int.parse(pos.value)].value = textEditing.text;
-    Get.delete<EditController>();
     Get.back();
   }
 }
